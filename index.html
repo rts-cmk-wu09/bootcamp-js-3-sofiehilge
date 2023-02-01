@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<a href="#content" class="sr-hidden">Skip to content</a>
@@ -13,9 +14,9 @@
 		<nav role="navigation">
 			<a href="./" class="siteBrand">Verdens Bedste Hjemmeside</a>
 			<ul class="primaryNavigation">
-				<li class="primaryNavigation__navigationItem"><a href="#!">Link 1</a></li>
-				<li class="primaryNavigation__navigationItem"><a href="#!">Link 2</a></li>
-				<li class="primaryNavigation__navigationItem"><a href="#!">Link 3</a></li>
+				<li class="primaryNavigation__navigationItem"><a href="?page=page1">Link 1</a></li>
+				<li class="primaryNavigation__navigationItem"><a href="?page=page2">Link 2</a></li>
+				<li class="primaryNavigation__navigationItem"><a href="?page=page3">Link 3</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -50,3 +51,11 @@
 	</footer>
 </body>
 </html>
+
+<!-- page1.html, page2.html, page3.html er placeholder for det indhold der skal være i main. eg. page1.html skal være en del af index for at vi kan vise indholdet. det samme for page2 og 3. Da page 3 er tom -->
+<!-- Løsnings muligheder er display: none giv page1.html et display: none og så en betingelse for hvornår skal den vises. -->
+<!-- Måske vi også kan bruge inner.html -->
+<!-- Hvad er det aktuelt at brugeren ser lige nu? Det er det link der er klikket på. addEventlistener. -->
+<!-- Sæt en forespørgselsstreng op i url'en, altså definere en variable oppe i URLen, den værdi kan man hente ned med URLSearchParams og værdien hentes ned. -->
+
+<!-- mozilla URLSearchpParams.get --> <!-- I vores tilfælde er name=page -->
