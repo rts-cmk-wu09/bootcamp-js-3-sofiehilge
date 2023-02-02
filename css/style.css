@@ -4,3 +4,7 @@
 @import 'atoms.css';
 @import 'molecules.css';
 @import 'organisms.css';
+
+#page1, #page2, #page3 {
+    display: none;
+}
